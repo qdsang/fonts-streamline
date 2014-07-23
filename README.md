@@ -61,6 +61,15 @@ https://github.com/sapegin/grunt-webfont
 eg: ./convert2svgfont.pe ./FZLTCXHJW.TTF
 
 
+# 提取网页字符
+
+```
+var html = document.body.innerHTML;
+var words = html.replace(/[^\u4E00-\u9FA5]/g,'');
+words += '1234567890qwertyuiopasdfghjklzxcvbnm,.QWERTYUIOPASDFGHJKLZXCVBNM';
+console.log(words);
+```
+
 # 参考项目
 
 * [svgfont2svgicons](https://github.com/nfroidure/svgfont2svgicons)
