@@ -5,13 +5,16 @@ fonts-streamline
 
 提取想要的字体，提高字体文件利用率
 
-## 使用方法
+现在只支持SVG格式字体生成svg、ttf、woff、eot格式字体，所以在使用前必要先转换成svg格式字体，转换方法拖到下面去找。
 
-> fonts-streamline 文本 ./svg字体文件.svg ./输出字体文件.svg
+
+# 使用方法
+
+> fonts-streamline 文本 svg字体文件路径 输出字体文件路径
 
 ```
 eg:
-fonts-streamline "一块钢板的艺术之旅40道工艺制程，193道精细工序1010步锻压成型不锈钢金属边框，40个工艺制程。 依然是全球最快的手机。小米手机 31234567890" ./FZLTCXHJW.svg ./iconfont.svg
+fonts-streamline "一块钢板的艺术之旅40道工艺制程" ./FZLTCXHJW.svg ./iconfont.svg
 ```
 
 # 关于字体文件格式转换成SVG格式
@@ -52,12 +55,13 @@ https://github.com/sapegin/grunt-webfont
 
 ## 开始转换
 
-###使用脚本 convert2svgfont.pe
 
-### eg: ./convert2svgfont.pe FZLTCXHJW.TTF
+参考脚本 convert2svgfont.pe， 这是在mac系统下的例子，如果你写好了其他的例子，麻烦帮忙push下。
+ 
+eg: ./convert2svgfont.pe ./FZLTCXHJW.TTF
 
 
-### 参考项目
+# 参考项目
 
 * [svgfont2svgicons](https://github.com/nfroidure/svgfont2svgicons)
 * [svgicons2svgfont](https://github.com/nfroidure/svgicons2svgfont)
