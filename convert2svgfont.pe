@@ -1,0 +1,4 @@
+#!/usr/local/Cellar/fontforge/20120731/bin/fontforge
+
+Open($1)
+Generate($1:r + ".svg")
