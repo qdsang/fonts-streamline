@@ -24,7 +24,7 @@ iconProvider.on('readable', function() {
   while(null !== glyph) {
     glyph = iconProvider.read();
     if(glyph && glyph.codepoint != '' && fontString.indexOf(glyph.codepoint) != -1) {
-      console.log(index + ' Saving glyph "' + glyph.name + '" to "' + glyphPath + '" codepoint: ' + glyph.codepoint);
+      console.log(index + ' Saving glyph "' + glyph.name + '" codepoint: ' + glyph.codepoint);
       index++;
       glyph.codepoint_origin = glyph.codepoint;
       glyph.codepoint = ('' + glyph.codepoint).charCodeAt(0);
