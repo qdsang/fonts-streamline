@@ -17,6 +17,27 @@ eg:
 fonts-streamline "一块钢板的艺术之旅40道工艺制程" ./FZLTCXHJW.svg ./iconfont.svg
 ```
 
+或者
+
+```
+var fonts_streamline = require('fonts-streamline')
+  , fs = require('fs');
+
+fonts_streamline({
+  keyword: '今天酱油了么？',
+  fontFilePath: '/home/Users/dev/test.ttf',
+  fontName: 'qdsang'
+}, function(fonts){
+
+  fs.writeFileSync('./fonts.svg', fonts.svg);
+  fs.writeFileSync('./fonts.woff', fonts.woff);
+  fs.writeFileSync('./fonts.ttf', fonts.ttf);
+  fs.writeFileSync('./fonts.eot', fonts.eot);
+
+  console.log('ok');
+});
+```
+
 # 关于字体文件格式转换成SVG格式
 
 ## 安装必要组件
