@@ -72,7 +72,7 @@ Then [install `ttfautohint`](http://www.freetype.org/ttfautohint/#download) (opt
 https://github.com/sapegin/grunt-webfont
 
 
-## 开始转换
+### 开始转换
 
 
 参考脚本 convert2svgfont.pe， 这是在mac系统下的例子，如果你写好了其他的例子，麻烦帮忙push下。
@@ -80,7 +80,7 @@ https://github.com/sapegin/grunt-webfont
 eg: ./convert2svgfont.pe ./FZLTCXHJW.TTF
 
 
-# 提取网页字符
+## 提取网页字符
 
 ```
 var html = document.body.innerHTML;
@@ -89,7 +89,13 @@ words += '1234567890qwertyuiopasdfghjklzxcvbnm,.QWERTYUIOPASDFGHJKLZXCVBNM';
 console.log(words);
 ```
 
-# 参考项目
+## Stats
+
+[![NPM](https://nodei.co/npm/fonts-streamline.png?downloads=true&stars=true)](https://nodei.co/npm/fonts-streamline/)
+[![NPM](https://nodei.co/npm-dl/fonts-streamline.png)](https://nodei.co/npm/fonts-streamline/)
+
+
+## 参考项目
 
 * [svgfont2svgicons](https://github.com/nfroidure/svgfont2svgicons)
 * [svgicons2svgfont](https://github.com/nfroidure/svgicons2svgfont)
