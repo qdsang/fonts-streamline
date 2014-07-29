@@ -1,11 +1,9 @@
 fonts-streamline
 ================
 
-根据字体库指定的文字，组成新字库
+根据指定的文字重组字体库。其实就是精简字体库，让页面中轻松挂载任意字体，不必考虑字体文件大小。 
 
-提取想要的字体，提高字体文件利用率
-
-现在只支持SVG格式字体生成svg、ttf、woff、eot格式字体，所以在使用前必要先转换成svg格式字体，转换方法拖到下面去找。
+现在只支持SVG格式字体生成svg、ttf、woff、eot格式字体。如果是其他格式字体文件，在使用前必要先转换成svg格式字体，转换方法拖到下面去找。
 
 
 # 使用方法
@@ -25,7 +23,7 @@ var fonts_streamline = require('fonts-streamline')
 
 fonts_streamline({
   keyword: '今天酱油了么？',
-  fontFilePath: '/home/Users/dev/test.ttf',
+  fontFilePath: '/home/Users/dev/test.svg',
   fontName: 'qdsang'
 }, function(fonts){
 

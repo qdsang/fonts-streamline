@@ -1,7 +1,7 @@
 {
   "name": "fonts-streamline",
-  "version": "0.0.5",
-  "description": "",
+  "version": "0.0.6",
+  "description": "根据指定的文字重组字体库。其实就是精简字体库，让页面中轻松挂载任意字体，不必考虑字体文件大小。 ",
   "homepage": "https://github.com/qdsang/fonts-streamline",
   "main": "src/index.js",
   "scripts": {
