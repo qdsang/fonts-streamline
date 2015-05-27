@@ -4,6 +4,8 @@
 fonts-streamline
 ================
 
+[![Join the chat at https://gitter.im/qdsang/fonts-streamline](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/qdsang/fonts-streamline?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 根据指定的文字重组字体库。其实就是精简字体库，让页面中轻松挂载任意字体，不必考虑字体文件大小。 
 
 现在只支持SVG格式字体生成svg、ttf、woff、eot格式字体。如果是其他格式字体文件，在使用前必要先转换成svg格式字体，转换方法拖到下面去找。
